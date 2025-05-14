@@ -102,13 +102,13 @@ body {
   opacity: 0;
   margin-bottom: 0.5rem;
   letter-spacing: 0.1rem;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .card p {
   opacity: 0;
   font-size: 0.8rem;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .card:hover img {
