@@ -1,0 +1,76 @@
+:root {
+  --bg: #f0f0f0;
+  --input-bg: white;
+  --text: #27292b;
+  --item-hover: #f6f6f6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  display: flex;
+  padding-top: 4rem;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.search-box {
+  margin-top: 15rem;
+  background: var(--input-bg);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  max-width: 22rem;
+  height: fit-content;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+input {
+  flex: 1;
+  max-height: 2.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.search-box svg {
+  stroke: var(--text);
+}
+
+.results {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.results ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.25rem;
+}
+
+.results ul li {
+  list-style: none;
+  border-radius: 0.25rem;
+  padding: 1rem 0.75rem;
+}
+
+.results ul li:hover {
+  background: var(--item-hover);
+  border-radius: 0.25rem;
+}
